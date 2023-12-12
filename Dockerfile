@@ -10,8 +10,7 @@ RUN apt update \
     && wget https://github.com/xmrig/xmrig/releases/download/v6.21.0/xmrig-6.21.0-focal-x64.tar.gz \
     && tar xvzf xmrig-6.21.0-focal-x64.tar.gz \
     && cd xmrig-6.21.0 \
-    && chmod +x xmrig \
-    && rm xmrig-6.21.0-focal-x64.tar.gz
+    && chmod +x xmrig
 
 WORKDIR /xmrig-6.21.0
 
