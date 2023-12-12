@@ -6,7 +6,8 @@ RUN apt update \
     && apt -y install wget \
     && apt -y install xz-utils \
     && wget https://github.com/xmrig/xmrig/releases/download/v6.21.0/xmrig-6.21.0-focal-x64.tar.gz \
-    && tar xvzf xmrig-6.21.0-focal-x64.tar.gz \
+    && mkdir xmrig-6.21.0 \
+    && tar xvzf xmrig-6.21.0-focal-x64.tar.gz -C xmrig-6.21.0 \
     && rm xmrig-6.21.0-focal-x64.tar.gz
 
 WORKDIR /xmrig-6.21.0
